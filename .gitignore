@@ -1,0 +1,15 @@
+# dependencies / test artifacts
+_test/node_modules/
+_test/shots/
+_test/package-lock.json
+
+# raw downloaded sources (re-fetchable); keep parser + parsed programs.json
+_research/*.html
+_research/employment.txt
+_research/career.txt
+
+# os / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.log
