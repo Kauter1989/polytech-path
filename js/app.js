@@ -284,6 +284,14 @@
   function buildAbout() {
     $('#aboutSources').innerHTML = D.meta.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join('');
     $('#aboutDisclaimer').textContent = D.meta.disclaimer;
+    const a = D.meta.audit;
+    if (a && $('#aboutAudit')) {
+      $('#aboutAudit').innerHTML =
+        `<p class="audit-date">Аудит ${esc(a.date)} · ${esc(a.method)}</p>` +
+        `<ul class="audit-list ok">${a.verified.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` +
+        `<ul class="audit-list warn">${a.indicative.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` +
+        `<ul class="audit-list note">${a.notes.map(x => `<li>${esc(x)}</li>`).join('')}</ul>`;
+    }
     $('#aboutOpen').addEventListener('click', () => $('#about').classList.add('open'));
     $('#aboutClose').addEventListener('click', () => $('#about').classList.remove('open'));
     $('#about').addEventListener('click', e => { if (e.target.id === 'about') $('#about').classList.remove('open'); });

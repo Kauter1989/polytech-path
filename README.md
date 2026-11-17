@@ -48,6 +48,7 @@ _test/              headless-тесты (playwright-core + Edge) и скринш
   компании показан в карточке (`partner` / `anchor` / `open`).
 
 Пересборка датасета: `python _research/build_data.py` (читает `_research/programs.json`).
+Подробная сверка с живыми источниками (что verified / что indicative) — [DATA_AUDIT.md](DATA_AUDIT.md).
 
 ## Управление
 

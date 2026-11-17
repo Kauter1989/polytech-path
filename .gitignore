@@ -5,6 +5,7 @@ _test/package-lock.json
 
 # raw downloaded sources (re-fetchable); keep parser + parsed programs.json
 _research/*.html
+_research/audit/*.html
 _research/employment.txt
 _research/career.txt
 
