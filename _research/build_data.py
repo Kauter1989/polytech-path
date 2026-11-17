@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Viacheslav Chukanov (GitHub: Kauter1989)
 """Build js/data.js for the SPbPU career mind-map from open-source data.
 Programs (codes/names/profiles/institutes) come from dep.spbstu.ru/edu (parsed into programs.json).
 Institutes/ruz ids from spbstu.ru & ruz.spbstu.ru. Disciplines/roles/companies are curated
@@ -440,6 +442,8 @@ DATA = dict(
 os.makedirs(os.path.join(ROOT, 'js'), exist_ok=True)
 out = os.path.join(ROOT, 'js', 'data.js')
 with open(out, 'w', encoding='utf-8') as f:
+    f.write('// SPDX-License-Identifier: Apache-2.0\n')
+    f.write('// Copyright 2026 Viacheslav Chukanov (GitHub: Kauter1989)\n')
     f.write('// Auto-generated from open sources (spbstu.ru, dep.spbstu.ru, ruz.spbstu.ru).\n')
     f.write('// Disciplines are indicative; companies labelled partner/anchor/open. See meta.disclaimer.\n')
     f.write('window.POLY_DATA = ')

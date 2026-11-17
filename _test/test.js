@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+// Copyright 2026 Viacheslav Chukanov (GitHub: Kauter1989)
 const { chromium } = require('playwright-core');
 const path = require('path');
 const fs = require('fs');

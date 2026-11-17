@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Viacheslav Chukanov (GitHub: Kauter1989)
 import re, json, sys
 from lxml import html
 

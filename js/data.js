@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+// Copyright 2026 Viacheslav Chukanov (GitHub: Kauter1989)
 // Auto-generated from open sources (spbstu.ru, dep.spbstu.ru, ruz.spbstu.ru).
 // Disciplines are indicative; companies labelled partner/anchor/open. See meta.disclaimer.
 window.POLY_DATA = {

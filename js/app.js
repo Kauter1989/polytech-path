@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+// Copyright 2026 Viacheslav Chukanov (GitHub: Kauter1989)
 /* SPbPU career mind-map — UI wiring. */
 (function () {
   'use strict';

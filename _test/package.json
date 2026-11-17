@@ -1,1 +1,1 @@
-{"name":"polytest","private":true,"type":"commonjs","dependencies":{"playwright-core":"^1.65.0"}}
+{"name":"polytest","private":true,"type":"commonjs","license":"Apache-2.0","dependencies":{"playwright-core":"^1.65.0"}}
